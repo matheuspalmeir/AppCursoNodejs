@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha --exit",
-    "start": "node server.js"
+    "start": "node server_express.js"
   },
   "author": "Matheus Palmeira",
   "license": "ISC",
