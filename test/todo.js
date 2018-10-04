@@ -1,5 +1,5 @@
 let chai = require('chai');
-let chaiHttp = require('chai-Http');
+let chaiHttp = require('chai-http');
 
 chai.use(chaiHttp);
 
@@ -26,7 +26,7 @@ describe('Test ToDo working', function(done){
 			.end(function(err,res){
 
 				console.log(res.body.success);
-				
+
 				expect(res.body.success).to.eql(true);
 				expect(res.body.todos).to.be.an('array');
 				done();
